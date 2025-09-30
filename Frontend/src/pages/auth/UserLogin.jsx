@@ -19,7 +19,7 @@ const UserLogin = () => {
         withCredentials: true
     })
      console.log(response)
-     navigate("/")
+     navigate("/vdos")
   };
 
   return (

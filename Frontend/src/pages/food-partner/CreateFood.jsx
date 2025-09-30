@@ -61,7 +61,7 @@ const CreateFood = () => {
         })
 
         
-        navigate("/"); // Redirect to home or another page after successful creation
+        navigate("/vdos"); // Redirect to home or another page after successful creation
         // Optionally reset
         // setName(''); setDescription(''); setVideoFile(null);
     };

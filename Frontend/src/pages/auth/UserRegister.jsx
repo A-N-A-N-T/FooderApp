@@ -22,7 +22,7 @@ const UserRegister = () => {
             withCredentials: true
         })
         console.log(response)
-        navigate("/")
+        navigate("/vdos")
     };
 
     return (

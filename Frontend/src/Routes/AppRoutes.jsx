@@ -11,17 +11,21 @@ import Saved from "../pages/general/Saved"
 import CreateFood from '../pages/food-partner/CreateFood'
 import Logout from '../pages/auth/Logout'
 import LogoutFoodPartner from '../pages/auth/LogoutFoodPartner'
+import LandingPage from '../Components/LandingPage'
+
+
 
 const AppRoutes = () => {
   return (
     <Router>
          <Routes>
+            <Route path='/' element={<LandingPage/>}></Route>
             <Route path="/user/register" element={<UserRegister/>}></Route>
             <Route path="/user/login" element={<UserLogin/>}></Route>
             <Route path="/foodPartner/register" element={<FoodPartnerRegister/>}></Route> 
             <Route path="/foodPartner/login" element={<FoodPartnerLogin/>}></Route>
             <Route path="/create-food" element={<CreateFood/>}></Route>
-            <Route path="/" element={<><Home/><BottomNav/></>}></Route>
+            <Route path="/vdos" element={<><Home/><BottomNav/></>}></Route>
             <Route path="/saved" element={<><Saved /><BottomNav /></>} />
             <Route path="/foodPartner/:id" element={<Profile/>}></Route>
             <Route path="/user/logout" element={<Logout/>}></Route>

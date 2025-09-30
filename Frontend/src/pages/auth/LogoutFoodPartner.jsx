@@ -7,7 +7,7 @@ const LogoutFoodPartner = () => {
     useEffect(()=>{
     axios.get("http://localhost:3030/auth/foodPartner/logout",{withCredentials:true})
     .then(()=> {
-        navigate("/foodPartner/login");
+        navigate("/");
     })
     },[])
   return (

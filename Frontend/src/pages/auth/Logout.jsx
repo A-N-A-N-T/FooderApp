@@ -10,7 +10,7 @@ const Logout = () => {
    useEffect(()=>{
     axios.get("http://localhost:3030/auth/user/logout",{withCredentials:true})
     .then(()=> {
-        navigate("/user/login");
+        navigate("/");
     },[])
 
    })

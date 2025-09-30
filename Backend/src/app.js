@@ -6,13 +6,14 @@ const authRoute = require("./routes/authRoutes")
 const foodRoute = require("./routes/foodRoutes")
 const foodPartnerRoute = require("./routes/foodPartnerRoutes")
 const cors = require("cors")
+const dbconnect = require("./databases/dbconnection")
 const app = express()
 
 dotenv.config()
 
 
 
-
+dbconnect();
 
 app.use(cookieParser())
 app.use(express.json()) 
